@@ -1,0 +1,45 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="/bootstrap/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+
+<script src="/bootstrap/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+<form id="contact-form" method="POST" action="index.php?uc=home&action=showCities">
+    <input type="text" name="temperatureMin" class="form-control" placeholder="Temperature Minimum"
+           aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" name="temperatureMax" class="form-control" placeholder="Temperature Maximum"
+           aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" name="dureeMin" class="form-control" placeholder="Duree Minimum" aria-label="Username"
+           aria-describedby="basic-addon1">
+    <input type="text" name="dureeMax" class="form-control" placeholder="Duree Maximum" aria-label="Username"
+           aria-describedby="basic-addon1">
+    <input type="text" name="budgetMin" class="form-control" placeholder="Budget Minimum" aria-label="Username"
+           aria-describedby="basic-addon1">
+    <input type="text" name="budgetMax" class="form-control" placeholder="Budget Maximum" aria-label="Username"
+           aria-describedby="basic-addon1">
+
+    <select class="form-control" id="supervisor" name="mois">
+        {% for moi in mois %}
+            <option value="{{ moi.id }}">{{ moi.libelle }}</option>
+        {% endfor %}
+    </select>
+
+    <select class="form-control" id="supervisor" name="type">
+        {% for type in types %}
+            <option value="{{ type.id }}">{{ type.libelle }}</option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">Chercher</button>
+
+</form>
+
+<!--- Affichage des villes -->
+{% if villes is defined and villes|length > 0 %}
+    {% for ville in villes %}
+        nom : {{ ville.villeNom }}
+        duree : {{ ville.dureeVoyage }}
+        budget : {{ ville.budgetVoyage }}
+        <img src="{{ ville.villeImage }}" alt="W3Schools.com">
+        <a href="index.php?uc=home&action=showCityWithDetails&numCity={{ ville.villeId }}">Voir détail</a>
+
+    {% endfor %}
+{% endif %}

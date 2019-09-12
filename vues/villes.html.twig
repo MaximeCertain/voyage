@@ -1,0 +1,14 @@
+<head>
+    <link rel="stylesheet" href="/bootstrap/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    <script src="/bootstrap/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+</head>
+{% include 'form.html.twig' %}
+
+{% for ville in villes %}
+    nom : {{ ville.villeNom }}
+    duree : {{ ville.dureeVoyage }}
+    budget : {{ ville.budgetVoyage }}
+    <img src="{{ ville.villeImage }}" alt="W3Schools.com">
+{% endfor %}
+
+

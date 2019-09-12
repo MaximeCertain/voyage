@@ -3,6 +3,7 @@
 
 class type
 {
+    //liste des types à utiliser dans une combo box
     public function getTypes(){
         $database = new database;
         $connection = $database->getConnection();
@@ -10,6 +11,5 @@ class type
         $request->execute();
         $resultat = $request->fetchAll();
         return json_encode($resultat);
-
     }
 }
