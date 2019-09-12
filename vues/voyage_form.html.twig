@@ -1,0 +1,35 @@
+{% if voyage is defined and voyage != null %}
+<h1>Modifier le voyage vers </h1>
+{{ voyage.villeId }}
+<form id="contact-form" method="POST" action="index.php?uc=authentification&action=enregistrerVoyageUpdate">
+
+    <input type="text" name="budget" class="form-control" placeholder="budget"
+           aria-label="Username" aria-describedby="basic-addon1" value="{{ voyage.budget }}">
+    <input type="text" name="duree" class="form-control" placeholder="duree du voyage"
+           aria-label="Username" aria-describedby="basic-addon1" value="{{ voyage.duree }}">
+    <input type="hidden" name="numCity" class="form-control" placeholder="Image de la ville"
+           aria-label="Username" aria-describedby="basic-addon1" value="{{ voyage.idVille }}">
+    <input type="hidden" name="numType" class="form-control" placeholder="Image de la ville"
+           aria-label="Username" aria-describedby="basic-addon1" value="{{ voyage.idType }}">
+
+    <button type="submit">enregistrer</button>
+    {% else %}
+        <h1>Ajouter un voyage</h1>
+        <form id="contact-form" method="POST" action="index.php?uc=authentification&action=enregistrerVoyageSinceCity   ">
+            <input type="text" name="budget" class="form-control" placeholder="budget"
+                   aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" name="duree" class="form-control" placeholder="duree du voyage"
+                   aria-label="Username" aria-describedby="basic-addon1">
+            <input type="hidden" name="numCity" class="form-control" placeholder="Image de la ville"
+                   aria-label="Username" aria-describedby="basic-addon1" value="{{ numCity }}">
+
+            <select class="form-control" id="supervisor" name="type">
+                {% for type in types %}
+                    <option value="{{ type.id }}">{{ type.libelle }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">enregistrer</button>
+
+        </form>
+    {% endif %}

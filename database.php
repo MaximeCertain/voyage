@@ -1,6 +1,6 @@
 <?php
 
-// voir pour l'api header('Content-Type: application/json');
+///header('Content-Type: application/json');
 //fichier de connexion à la base voyage
 class database
 {

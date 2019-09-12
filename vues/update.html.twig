@@ -1,0 +1,48 @@
+{% if ville is defined and ville != null %}
+ <h1>Modifier la ville de {{ ville.villeNom }}</h1>
+
+    <form id="contact-form" method="POST" action="index.php?uc=authentification&action=submitUpdateCity&villeId={{ ville.villeId }}">
+
+    <input type="text" name="nomVille" class="form-control" placeholder="Nom de la ville"
+           aria-label="Username" aria-describedby="basic-addon1" value="{{ ville.villeNom }}">
+    <input type="text" name="imageVille" class="form-control" placeholder="Image de la ville"
+           aria-label="Username" aria-describedby="basic-addon1" value="{{ ville.villeImage }}">
+
+
+
+    <img src="{{ ville.villeImage }}">
+
+               <select class="form-control" id="supervisor" name="continent">
+        {% for continent in continents %}
+            <option value="{{ continent.id }}">{{ continent.libelle }}</option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">enregistrer</button>
+{% else %}
+    <h1>Ajouter</h1>
+    <form id="contact-form" method="POST" action="index.php?uc=authentification&action=submitCreateCity">
+
+    <input type="text" name="nomVille" class="form-control" placeholder="Nom de la ville"
+           aria-label="Username" aria-describedby="basic-addon1">
+    <input type="text" name="imageVille" class="form-control" placeholder="Image de la ville"
+           aria-label="Username" aria-describedby="basic-addon1">
+
+               <select class="form-control" id="supervisor" name="continent">
+        {% for continent in continents %}
+            <option value="{{ continent.id }}">{{ continent.libelle }}</option>
+        {% endfor %}
+    </select>
+
+               <button type="submit">enregistrer</button>
+
+        </form>
+{% endif %}
+<a href="index.php?uc=authentification&action=createVoyageSinceCity&villeId={{ ville.villeId }}">Créeer voyage</a>
+{{ voyage.idVille }}
+        {% for voyage in voyages %}
+        {{ voyage.budget }}
+        <a href="index.php?uc=authentification&action=updateVoyage&villeId={{ voyage.idVille }}&typeId={{ voyage.idType }}">Modifier</a>
+        <a href="index.php?uc=authentification&action=deleteVoyage&villeId={{ voyage.idVille }}&typeId={{ voyage.idType }}">Supprimer</a>
+
+{% endfor %}

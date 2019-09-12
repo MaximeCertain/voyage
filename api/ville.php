@@ -3,6 +3,18 @@
 class ville
 {
     //liste de villes
+    public function getAllVilles()
+    {
+        $database = new database;
+        $connection = $database->getConnection();
+        $request = $connection->prepare("select ville.nom as villeNom, ville.id as villeId, ville.image as villeImage    
+from ville");
+        $request->execute();
+        $resultat = $request->fetchAll();
+        return json_encode($resultat);
+    }
+
+    //liste de villes
     public function getVilles()
     {
         $database = new database;
@@ -45,8 +57,10 @@ INNER JOIN periode on periode.idVille = ville.id");
         $request = $connection->prepare($sql);
         $request->execute();
         $resultat = $request->fetch();
+
         return ($resultat);
     }
+
 
     //fonction qui ajoute des conditions selon les données envoyés par l'utilisateur pour la fonction publique getVillesByOptions
     private function getWhere($dureeMin, $dureeMax, $temperatureMin, $temperatureMax, $budgetMin, $budgetMax, $idType, $mois)
@@ -82,4 +96,37 @@ INNER JOIN periode on periode.idVille = ville.id");
         $where .= " ; ";
         return $where;
     }
+
+    public function createVille($nomVille, $imageVille, $idContinent){
+        $database = new database;
+        $connection = $database->getConnection();
+        $sql = "INSERT into ville(nom,image,idContinent)
+VALUES('".$nomVille."','".$imageVille."', $idContinent)
+";
+        $request = $connection->prepare($sql);
+        $request->execute();
+        return true ;
+    }
+    public function updateVille($nomVille, $imageVille, $idContinent, $idVille){
+        $database = new database;
+        $connection = $database->getConnection();
+        $sql = "UPDATE ville set nom = '".$nomVille."', image = '".$imageVille."' , idContinent = $idContinent where id = $idVille 
+";
+        $request = $connection->prepare($sql);
+        $request->execute();
+        return true ;
+    }
+
+    public function deleteVille($idVille){
+        $database = new database;
+        $connection = $database->getConnection();
+        $sql = "DELETE FROM ville WHERE id =" .$idVille."";
+        echo $sql;
+        $request = $connection->prepare($sql);
+        $request->execute();
+        return true ;
+    }
+
+
 }
+

@@ -20,9 +20,10 @@ foreach ($villes2 as $v){
     echo $v->budgetVoyage;
 }*/
 
-$data = file_get_contents('http://api.previmeteo.com/33a3c400b08f1b2205c25b00aef0ca9c/ig/api?weather=paris&format=json');
+    $data = file_get_contents('http://api.previmeteo.com/33a3c400b08f1b2205c25b00aef0ca9c/ig/api?weather=paris&format=json');
     $city = json_decode($data);
-    echo $data;
+    //var_dump($city->weather->forecast_information->city->{'@attributes'}->data);
+    var_dump($city->weather->current_conditions->temp_c->{'@attributes'}->data);
 //echo $type->getTypes();
 //retourne résultats des villes selon critères, mettre variables à la place des données
 //echo $ville->getVillesByOptions(2, 5, null,5,300,null,1,1);
