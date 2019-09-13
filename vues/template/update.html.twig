@@ -135,13 +135,16 @@
 
                 <img src="{{ ville.villeImage }}">
 
-                <select class="form-control" id="supervisor" name="continent">
+                <select class="form-control hidden" id="supervisor" name="continent">
                     {% for continent in continents %}
-                        <option value="{{ continent.id }}">{{ continent.libelle }}</option>
+                        <option value="{{ continent.id }} ">{{ continent.libelle }}</option>
                     {% endfor %}
                 </select>
+<div class="col-md-12 text-center" style="margin-top:9px;">
+    <button class="btn btn-success" type="submit">Enregistrer</button>
 
-                <button class="btn btn-success" type="submit">enregistrer</button>
+</div>
+            </form>
                 <h1>Les voyages de {{ ville.villeNom }}</h1>
                 <a class="btn btn-primary" href="index.php?uc=authentification&action=createVoyageSinceCity&villeId={{ ville.villeId }}">Créer voyage</a>
                 {{ voyage.idVille }}
@@ -179,7 +182,7 @@
                                aria-label="Username" aria-describedby="basic-addon1">
                         <select class="form-control" id="supervisor" name="continent">
                             {% for continent in continents %}
-                                <option value="{{ continent.id }}">{{ continent.libelle }}</option>
+                                <option value="{{ continent.id }}" >{{ continent.libelle }}</option>
                             {% endfor %}
                         </select>
 
