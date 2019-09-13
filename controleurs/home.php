@@ -21,7 +21,7 @@ switch ($action) {
     case 'form':
         {
 
-            echo $twig->render('form.html.twig', [
+            echo $twig->render('template/index.html.twig', [
                 'mois' => $mois,
                 'types' => $types
             ]);
@@ -40,7 +40,7 @@ switch ($action) {
             $type = ($_POST['type']!== "") ? $_POST['type'] : null;
             $villes = json_decode($ville->getVillesByOptions($dureeMin, $dureeMax, $temperatureMin,
                 $temperatureMax, $budgetMin, $budgetMax, $type, $moisChoisi));
-            echo $twig->render('form.html.twig', [
+            echo $twig->render('template/results.html.twig', [
                 'villes' => $villes,
                 'mois' => $mois,
                 'types' => $types

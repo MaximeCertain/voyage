@@ -1,0 +1,33 @@
+<div class="row">
+    {% for ville in villes %}
+        <section class="card-group col-md-6" style="margin-bottom: 10px; margin-top: 15px;">
+            <div class="widget-twitter-profile">
+                <div class="profile-info">
+                    <div class="profile-picture">
+                        <img src="{{ ville.villeImage }}" alt="">
+                    </div>
+                    <div class="profile-account">
+                        <h3 class="name font-weight-semibold">{{ ville.villeNom }}</h3>
+                        <a type="button" href="index.php?uc=home&action=showCityWithDetails&numCity={{ ville.villeId }}" class="mb-1 mt-1 mr-1 btn btn-warning"><i class="fas fa-eye"></i> Voir détail</a>
+                    </div>
+                    <ul class="profile-stats">
+                        <li>
+                            <h5 class="stat text-uppercase">Tweets</h5>
+                            <h4 class="count">60</h4>
+                        </li>
+                        <li>
+                            <h5 class="stat text-uppercase">Following</h5>
+                            <h4 class="count">139</h4>
+                        </li>
+                        <li>
+                            <h5 class="stat text-uppercase">Activités</h5>
+                            <h4 class="count">38</h4>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    {% endfor %}
+
+</div>
