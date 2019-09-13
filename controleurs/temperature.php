@@ -45,9 +45,11 @@ switch ($action) {
                     //si non enregistrer une ligne dans période
                }
                 //si existe modifier ligne sinon créer
-                echo 'ok';
             }
-
+            $villes = json_decode($ville->getVilles());
+            echo $twig->render('template/villes.html.twig', [
+                "villes" => $villes
+            ]);
             break;
         }
 }

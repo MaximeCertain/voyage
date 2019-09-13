@@ -79,6 +79,10 @@
                                     <img src="https://www.aeroport-rodez.fr/wp-content/uploads/2019/02/image-a-la-une-orly-4.png"
                                          class="rounded img-fluid">
                                 </div>
+                                <div class="thumb-info col-md-12 text-center" style="margin-top: 360px;">
+                                    <img src="http://www.deimian.com/wp-content/uploads/2016/04/but_paypal_deimian.gif"
+                                         class="rounded img-fluid">
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -110,7 +114,7 @@
                 <div class="right-wrapper text-right">
                     <ol class="breadcrumbs">
                         <li>
-                            <a href="index.html">
+                            <a href="index.php?uc=authentification">
                                 <i class="fas fa-user-edit">Connexion administrateur</i>
                             </a>
                         </li>
@@ -143,8 +147,8 @@
                                                         <input id="listenSliderTemperature" type="hidden"
                                                                value="0, 50"/>
                                                     </div>
-                                                    <p class="output2">The min is: <b class="min">0</b> and the max is:
-                                                        <b class="max">50</b></p>
+                                                    <p class="output2">De <b class="minTemp"> 0 °</b> à
+                                                        <b class="maxTemp"> 50 °</b></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,8 +172,7 @@
                                                          data-plugin-slider-output="#listenSliderBudget">
                                                         <input id="listenSliderBudget" type="hidden" value="10, 10000"/>
                                                     </div>
-                                                    <p class="output2">The min is: <b class="min">10</b> and the max is:
-                                                        <b class="max">10000</b></p>
+                                                    <p class="output2"> De  <b class="minBudget">10 €</b> à<b class="maxBudget"> 10000 €</b></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -195,8 +198,8 @@
                                                          data-plugin-slider-output="#listenSliderDuree">
                                                         <input id="listenSliderDuree" type="hidden" value="1, 30"/>
                                                     </div>
-                                                    <p class="output2">The min is: <b class="min">1</b> and the max is:
-                                                        <b class="max">30</b></p>
+                                                    <p class="output2">De : <b class="minDuree"> 1 jours</b> à
+                                                        <b class="maxDuree"> 30 jours</b></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -353,6 +356,47 @@
 <script src="vues/template/js/examples/examples.dashboard.js"></script>
 <script>
 
+    $("#listenSliderTemperature").on("change", function () {
+        var temp = $('#listenSliderTemperature').val();
+        var tempMin, tempMax;
+        if (temp.indexOf(',') > -1) {
+            tempMin = (temp.substring(0, temp.indexOf(",")));
+            tempMax = temp.split(',')[1];
+        } else {
+            tempMin = (temp.substring(0, temp.indexOf("/")));
+            tempMax = temp.split('/')[1];
+        }
+        $('.minTemp').html(tempMin + " °");
+        $('.maxTemp').html(tempMax+ " °");
+    });
+    $("#listenSliderDuree").on("change", function () {
+        var duree = $('#listenSliderDuree').val();
+        var dureeMin, dureeMax;
+        if (duree.indexOf(',') > -1) {
+            dureeMin = (duree.substring(0, duree.indexOf(",")));
+            dureeMax = duree.split(',')[1];
+        } else {
+            dureeMin = (duree.substring(0, duree.indexOf("/")));
+            dureeMax = duree.split('/')[1];
+        }
+        $('.minDuree').html(dureeMin+" jours");
+        $('.maxDuree').html(dureeMax + " jours");
+    });
+    $("#listenSliderBudget").on("change", function () {
+        var budget = $('#listenSliderBudget').val();
+        var budgetMin, budgetMax;
+        if (budget.indexOf(',') > -1) {
+            budgetMin = (budget.substring(0, budget.indexOf(",")));
+            budgetMax = budget.split(',')[1];
+        } else {
+            budgetMin = (budget.substring(0, budget.indexOf("/")));
+            budgetMax = budget.split('/')[1];
+        }
+
+        $('.minBudget').html(budgetMin + " €");
+        $('.maxBudget').html(budgetMax)+ " €";
+    });
+
     var p = document.getElementById("searchResults");
     //récuperer temps min max etc
     p.onclick = function () {
@@ -384,13 +428,6 @@
 
         var type = $('#type').val();
         var mois = $('#mois').val();
-
-        console.log(tempMin);
-        console.log(tempMax);
-        console.log(budgetMin);
-        console.log(budgetMax);
-        console.log(dureeMin);
-        console.log(dureeMax);
 
         $.ajax({
             url: 'index.php?uc=home&action=showCities',

@@ -35,7 +35,6 @@ class type
         $database = new database;
         $connection = $database->getConnection();
         $sql = "update avoir set budget =".$budget.", duree =".$duree.", idType = ".$idType." WHERE idVille =" .$idVille." and idType = ".$idType."";
-var_dump($sql);
         $request = $connection->prepare($sql);
         $request->execute();
         return true ;
@@ -53,7 +52,8 @@ var_dump($sql);
     {
         $database = new database;
         $connection = $database->getConnection();
-        $sql = ("select * from avoir  WHERE idVille = ".$idVille." and idType = ".$idType."");
+        $sql = ("select * from avoir inner join type on avoir.idType = type.id
+   inner join ville on ville.id = avoir.idVille WHERE idVille = ".$idVille." and idType = ".$idType."");
         $request = $connection->prepare($sql);
         $request->execute();
         $resultat = $request->fetch();
@@ -61,15 +61,11 @@ var_dump($sql);
         return ($resultat);
     }
 
-
-
-
-
-
     public function getVoyageForCity($idVille){
         $database = new database;
         $connection = $database->getConnection();
-        $sql = "select * from avoir inner join ville on avoir.idVille = ville.id where avoir.idVille = " .$idVille."";
+        $sql = "select * from avoir inner join ville on avoir.idVille = ville.id inner join type on avoir.idType = type.id
+ where avoir.idVille = " .$idVille."";
 
         $request = $connection->prepare($sql);
         $request->execute();

@@ -2,83 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd692a43-30e3-4b3c-ade2-773b3fa8cad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vues/template/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/invoice-print.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/base/_content-with-menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/base/_header-nav-main-mobile.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/base/_nanoscroll.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/base/_page-header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/base/_sidebar-left-sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/base/_sidebar-left.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/base/_sidebar-right.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/config/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_accordions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_alerts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_animations.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_carousels.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_datatables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_dropdowns.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_fileupload.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_lightboxes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_loading-overlay.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_loading-progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_nestable.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_portlets.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_pricing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_sidebar-widgets.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_timepicker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_toggles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/gui/_toolbars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/partials/_calendar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/partials/_landing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/partials/_log-viewer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/partials/_mailbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/partials/_search-results.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/partials/_sign.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/sass/partials/_user-profile.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/skins/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/skins/square-borders.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/css/theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/fond.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/blizzard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/bright_squares.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/fancy_deboss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/honey_im_subtle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/linedpaper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/linen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/pw_maze_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/skin_side_up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/straws.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/patterns/subtle_grunge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/previews/preview-dark-header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/previews/preview-dark.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/previews/preview-light-sidebar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/previews/preview-sidebar-sm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/img/previews/preview-square-borders.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.advanced.form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.datatables.ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.datatables.row.with.details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.header.menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.loading.progress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.lockscreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.modals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.notifications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.portlets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/examples/examples.vector.maps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/theme.init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/js/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vues/template/results.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vues/template/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vues/template/update.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vues/template/villes.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controleurs/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controleurs/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vues/administrator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/administrator.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/type.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/type.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/ville.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/ville.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controleurs/administrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/controleurs/administrator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controleurs/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controleurs/temperature.php" beforeDir="false" afterPath="$PROJECT_DIR$/controleurs/temperature.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vues/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vues/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vues/show_city.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/show_city.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vues/villes.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/villes.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vues/template/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/template/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vues/template/results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/template/results.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vues/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/update.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vues/voyage_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/vues/voyage_form.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,8 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controleurs/temperature.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            <state relative-caret-position="177">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/template/voyage_form.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="138" column="26" lean-forward="true" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -106,44 +55,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/voyage_form.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="45">
+              <caret line="3" column="106" selection-start-line="3" selection-start-column="106" selection-end-line="3" selection-end-column="106" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/show_city.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="143" column="62" selection-start-line="143" selection-start-column="62" selection-end-line="143" selection-end-column="62" />
-              <folding>
-                <element signature="n#style#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/template/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="395" column="18" selection-start-line="395" selection-start-column="18" selection-end-line="395" selection-end-column="53" />
-              <folding>
-                <element signature="n#style#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#section#0;n#section#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/villes.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="194">
+              <caret line="151" column="79" selection-start-line="151" selection-start-column="79" selection-end-line="151" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -151,35 +73,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/ville.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="339">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/form.html.twig">
+        <entry file="file://$PROJECT_DIR$/vues/template/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="54" lean-forward="true" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/administrator.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="437">
+              <caret line="81" column="99" selection-start-line="81" selection-start-column="99" selection-end-line="81" selection-end-column="99" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,11 +94,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/template/results.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="120" selection-start-line="10" selection-start-column="120" selection-end-line="10" selection-end-column="120" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="62" lean-forward="true" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/template/villes.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/template/update.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="177" column="106" selection-start-line="177" selection-start-column="106" selection-end-line="177" selection-end-column="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controleurs/administrator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="78" column="61" lean-forward="true" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -200,36 +131,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getv</find>
-      <find>getVilleById</find>
-      <find>getville</find>
-      <find>get</find>
-      <find>echo</find>
-      <find>temp</find>
-      <find>delete</find>
-      <find>villeId</find>
-      <find>nom de la</find>
-      <find>update</find>
-      <find>tryLo</find>
-      <find>getAll</find>
-      <find>administra</find>
-      <find>getVilleBy</find>
-      <find>report</find>
-      <find>php</find>
-      <find>fa-euro-sign</find>
-      <find>fa-euro</find>
-      <find>time</find>
-      <find>je recher</find>
-      <find>listenSLid</find>
-      <find>listenSL</find>
-      <find>continent</find>
-      <find>tes</find>
-      <find>ou souhait</find>
-      <find>john doe</find>
-      <find>voir dé</find>
-      <find>miz</find>
+      <find>listenSLiderTempe</find>
+      <find>minTem</find>
+      <find>minTemp</find>
+      <find>budgetMax</find>
+      <find>maxBudget</find>
+      <find>voyage</find>
+      <find>for vil</find>
+      <find>ville</find>
+      <find>villeIm</find>
+      <find>render</find>
       <find>retour</find>
-      <find>index.php</find>
+      <find>results</find>
+      <find>login</find>
+      <find>nav nav</find>
+      <find>les voyages d</find>
+      <find>modifier</find>
+      <find>periode</find>
+      <find>periode</find>
+      <find>getvoyage</find>
+      <find>entre</find>
+      <find>Créeer voyag</find>
+      <find>getV</find>
+      <find>voyages</find>
+      <find>update</find>
+      <find>ville</find>
+      <find>ville.</find>
+      <find>updateC</find>
+      <find>image</find>
+      <find>tempér</find>
+      <find>températ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -239,32 +170,40 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/vues/form.php" />
         <option value="$PROJECT_DIR$/vues/test.html.twig" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/database.php" />
         <option value="$PROJECT_DIR$/fixtures.sql" />
-        <option value="$PROJECT_DIR$/vues/form.html.twig" />
-        <option value="$PROJECT_DIR$/vues/login.html.twig" />
         <option value="$PROJECT_DIR$/api/user.php" />
         <option value="$PROJECT_DIR$/api/continent.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/api/periode.php" />
+        <option value="$PROJECT_DIR$/template/index.php" />
+        <option value="$PROJECT_DIR$/vues/administrator.html.twig" />
+        <option value="$PROJECT_DIR$/vues/login.html.twig" />
+        <option value="$PROJECT_DIR$/vues/form.html.twig" />
+        <option value="$PROJECT_DIR$/vues/template/login.html.twig" />
+        <option value="$PROJECT_DIR$/vues/template/villes.html.twig" />
+        <option value="$PROJECT_DIR$/vues/villes.html.twig" />
+        <option value="$PROJECT_DIR$/vues/template/base.html.twig" />
+        <option value="$PROJECT_DIR$/vues/form_voyage.html.twig" />
+        <option value="$PROJECT_DIR$/vues/template/voyage_form.twig" />
+        <option value="$PROJECT_DIR$/vues/voyage_form.html.twig" />
+        <option value="$PROJECT_DIR$/vues/template/results.html.twig" />
+        <option value="$PROJECT_DIR$/controleurs/home.php" />
+        <option value="$PROJECT_DIR$/api.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/vues/template/voyage_form.html.twig" />
         <option value="$PROJECT_DIR$/vues/update.html.twig" />
         <option value="$PROJECT_DIR$/api/type.php" />
-        <option value="$PROJECT_DIR$/vues/voyage_form.html.twig" />
+        <option value="$PROJECT_DIR$/vues/template/index.html.twig" />
+        <option value="$PROJECT_DIR$/api/ville.php" />
+        <option value="$PROJECT_DIR$/vues/template/update.html.twig" />
+        <option value="$PROJECT_DIR$/vues/show_city.html.twig" />
         <option value="$PROJECT_DIR$/controleurs/temperature.php" />
         <option value="$PROJECT_DIR$/controleurs/administrator.php" />
-        <option value="$PROJECT_DIR$/template/index.php" />
-        <option value="$PROJECT_DIR$/api/ville.php" />
-        <option value="$PROJECT_DIR$/controleurs/home.php" />
-        <option value="$PROJECT_DIR$/vues/template/index.html.twig" />
-        <option value="$PROJECT_DIR$/vues/administrator.html.twig" />
-        <option value="$PROJECT_DIR$/vues/villes.html.twig" />
-        <option value="$PROJECT_DIR$/vues/template/results.html.twig" />
-        <option value="$PROJECT_DIR$/vues/show_city.html.twig" />
       </list>
     </option>
   </component>
@@ -287,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,11 +238,6 @@
               <item name="voyage" type="b2602c69:ProjectViewProjectNode" />
               <item name="voyage" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="voyage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="voyage" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="voyage" type="b2602c69:ProjectViewProjectNode" />
@@ -329,7 +264,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,14 +279,14 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vues/template" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vues/template" />
       <recent name="$PROJECT_DIR$/vues" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/template" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vues/template" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -386,17 +320,18 @@
       <workItem from="1568305712862" duration="5151000" />
       <workItem from="1568312545369" duration="2981000" />
       <workItem from="1568358095893" duration="12177000" />
+      <workItem from="1568374142713" duration="12773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55669000" />
+    <option name="totallyTimeSpent" value="68442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18022865" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2804304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -409,7 +344,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.08042896" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.10589813" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -463,13 +398,6 @@
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -484,20 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/mois.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -505,68 +419,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="84" selection-start-line="40" selection-start-column="84" selection-end-line="40" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="91" selection-start-line="36" selection-start-column="91" selection-end-line="36" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/periode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/continent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vues/template/js/examples/examples.gmap.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="223" column="26" lean-forward="true" selection-start-line="223" selection-start-column="26" selection-end-line="223" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="101" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleurs/administrator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controleurs/login.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index.php" />
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -591,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controleurs/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -605,78 +454,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controleurs/temperature.php">
+    <entry file="file://$PROJECT_DIR$/vues/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="54" lean-forward="true" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/voyage_form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/template/results.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="120" selection-start-line="10" selection-start-column="120" selection-end-line="10" selection-end-column="120" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/ville.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/vues/template/debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vues/administrator.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/template/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/vues/update.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="395" column="18" selection-start-line="395" selection-start-column="18" selection-end-line="395" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="541">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vues/villes.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/template/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="150" column="40" lean-forward="true" selection-start-line="150" selection-start-column="40" selection-end-line="150" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/login.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/template/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/continent.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/mois.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/periode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="66" column="36" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/ville.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/template/update.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="177" column="106" selection-start-line="177" selection-start-column="106" selection-end-line="177" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/voyage_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="106" selection-start-line="3" selection-start-column="106" selection-end-line="3" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/template/results.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="62" lean-forward="true" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/template/voyage_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="138" column="26" lean-forward="true" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/template/villes.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/template/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="81" column="99" selection-start-line="81" selection-start-column="99" selection-end-line="81" selection-end-column="99" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vues/show_city.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="143" column="62" selection-start-line="143" selection-start-column="62" selection-end-line="143" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#aside#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="194">
+          <caret line="151" column="79" selection-start-line="151" selection-start-column="79" selection-end-line="151" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/temperature.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/administrator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="78" column="61" lean-forward="true" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
         </state>
       </provider>
     </entry>

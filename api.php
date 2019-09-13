@@ -1,16 +1,19 @@
 <?php
+header('Content-Type: application/json');
+
 require 'database.php';
 require 'api/ville.php';
 require 'api/type.php';
 require 'api/periode.php';
 require 'api/mois.php';
+require 'api/continent.php';
 
 $ville = new ville();
 $type = new type();
 $periode = new periode();
 $mois = new mois();
+$continent = new continent();
 $request = $_SERVER['REQUEST_URI'];
-echo $request;
 switch ($request) {
     case '/voyage/api.php/villes' :
         $villes =  $ville->getVilles();
@@ -22,11 +25,11 @@ switch ($request) {
     case '/voyage/api.php/types' :
         echo $type->getTypes();
         break;
-    case '/voyage/api.php/periode/?id' :
-       echo 'periode';
-       echo $_GET('id');
+    case '/voyage/api.php/continents' :
+       echo $continent->getContinents();
         break;
     default:
-       echo 'l\'url n\'est pas valide';
+        echo $request;
+        echo 'l\'url n\'est pas valide';
         break;
 }

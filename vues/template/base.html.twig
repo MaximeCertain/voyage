@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html class="boxed header-fixed">
 <head>
@@ -69,11 +67,9 @@
                                             </div>
                                         </header>
                                         <div class="card-body text-center">
-                                            <h3 class="font-weight-semibold mt-3 text-center">Explorez le monde ! </h3>
-                                            <p class="text-center">A partir de l'aéroport d'Orly, trouvez votre
-                                                destination idéale
-                                                pour vos prochaines vacances et choisisez une activité parmi celles
-                                                disponibles ! </p>
+                                            <h3 class="font-weight-semibold mt-3 text-center">Administration du site </h3>
+                                            <p class="text-center">Sur cet interface, vous pouvez créer modifier des villes. Pour chacune de ces villes vous pouvez créer, modifier et supprimer des activités. </p>
+                                            Enfin, vous pouvez mettre à jour les températures de vos villes automatiquement.
                                         </div>
                                     </section>
                                 </div>
@@ -107,91 +103,68 @@
 
         <section role="main" class="content-body">
             <header class="page-header">
-                <h2>La ville de {{ ville.villeNom }} pour l'activité {{ ville.typeLibelle }}</h2>
+                <h2>Administration du site</h2>
 
                 <div class="right-wrapper text-right">
                     <ol class="breadcrumbs">
                         <li>
                             <a href="index.php?uc=authentification">
-                                <i class="fas fa-user-edit">Connexion administrateur</i>
+                                <i class="fas fa-user-edit">se déconnecter</i>
                             </a>
+
                         </li>
                     </ol>
 
                     <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
                 </div>
             </header>
-            <div class="col-md-12">
+            {% block content %}
+                <a class="btn btn-warning" href="index.php?uc=majTemp">Mettre à jour les températures</a>
+                <a class="btn btn-success" href="index.php?uc=authentification&action=createCity">Nouvelle ville</a>
 
-                <section class="card mb-4">
-                    <div class="card-body card-body-nopadding">
-                        <div class="owl-carousel owl-theme mb-0 owl-loaded owl-drag owl-carousel-init" data-plugin-carousel="" data-plugin-options="{ &quot;dots&quot;: true, &quot;items&quot;: 1 }" style="">
-
-
-                            <div class=""><div class="col-md-12">
-                                    <div class="col-md-11">
-                                        <div class="">
-                                            <img alt="" class="img-fluid rounded" src="{{ ville.villeImage }}">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="p-3">
-                            <h4 class="font-weight-semibold mt-0">{{ ville.villeNom }} - {{ ville.typeLibelle }}</h4>
-                            <p>Pour réserver ce voyage merci de vous rendre au guichet "Voyages Orly" au premier étage</p>
-                        </div>
-                    </div>
-                    <div class="card-footer card-footer-btn-group">
-                        <a href="index.php?uc=home&action=form"><i class="fas fa-user mr-1"></i> Retour à la recherche</a>
-                    </div>
-                </section>
-
-
-                <section class="card col-md-6 text-center">
+                <section class="card">
                     <header class="card-header">
+                        <div class="card-actions">
+                            <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
+                            <a href="#" class="card-action card-action-dismiss" data-card-dismiss=""></a>
+                        </div>
 
-                        <h2 class="card-title">Températures à {{ ville.villeNom }}</h2>
+                        <h2 class="card-title">Villes disponible</h2>
                     </header>
                     <div class="card-body">
                         <table class="table table-responsive-md table-striped mb-0">
                             <thead>
                             <tr>
-                                <th>Mois</th>
-                                <th>Température</th>
+                                <th></th>
+                                <th>Image</th>
+                                <th>Nom</th>
+                                <th></th>
+                                <th></th>
                             </tr>
                             </thead>
                             <tbody>
-                            {% for periode in periodes %}
+
+                            {% for ville in villes %}
                                 <tr>
-                                    <td> {{ periode.libelle }} </td>
-                                    <td>{{ periode.temperature }} °</td>
+                                    <td><img class="img-fluid" src="{{ ville.villeImage }}" style="max-height: 150px; max-width: 150px; width: 150px; height: 150px;"></td>
+                                    <td>{{ ville.villeNom }}</td>
+                                    <td>
+                                        <a class="btn btn-primary" href="index.php?uc=authentification&action=updateCity&numCity={{ ville.villeId }}">Modifier</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-danger" href="index.php?uc=authentification&action=deleteCity&numCity={{ ville.villeId }}">Supprimer</a>
+                                    </td>
                                 </tr>
                             {% endfor %}
-
 
                             </tbody>
                         </table>
                     </div>
                 </section>
-            </div>            <br>
-
-            <script>
-                function showfilter(id) {
-                    element = document.getElementById(id);
-                    document.getElementById("liste1").style.display = "none";
-                    document.getElementById("liste2").style.display = "none";
-                    document.getElementById("liste3").style.display = "none";
-                    document.getElementById("liste4").style.display = "none";
-                    element.style.display = "block";
-                }
-
-                function hidefilter(id) {
-                    element = document.getElementById(id);
-                    element.style.display = "none";
-                }
-            </script>
+            {% endblock %}
             <!-- end: page -->
-</section>
-</div>
+        </section>
+    </div>
 
 
 </section>

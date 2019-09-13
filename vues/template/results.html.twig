@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row resultsCities">
     {% for ville in villes %}
         <section class="card-group col-md-6" style="margin-bottom: 10px; margin-top: 15px;">
             <div class="widget-twitter-profile">
@@ -12,16 +12,16 @@
                     </div>
                     <ul class="profile-stats">
                         <li>
-                            <h5 class="stat text-uppercase">Tweets</h5>
-                            <h4 class="count">60</h4>
+                            <h5 class="stat text-uppercase">Activité</h5>
+                            <h4 class="count">{{ ville.typeLibelle }}</h4>
                         </li>
                         <li>
-                            <h5 class="stat text-uppercase">Following</h5>
-                            <h4 class="count">139</h4>
+                            <h5 class="stat text-uppercase">Durée</h5>
+                            <h4 class="count">{{ ville.dureeVoyage }} jours </h4>
                         </li>
                         <li>
-                            <h5 class="stat text-uppercase">Activités</h5>
-                            <h4 class="count">38</h4>
+                            <h5 class="stat text-uppercase">Tarif</h5>
+                            <h4 class="count">{{ ville.budgetVoyage }} €</h4>
                         </li>
                     </ul>
                 </div>

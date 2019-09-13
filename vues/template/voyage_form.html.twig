@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html class="boxed header-fixed">
 <head>
@@ -58,6 +56,7 @@
             <div class="nano">
                 <div class="nano-content">
                     <nav id="menu" class="nav-main" role="navigation">
+                        <a class="btn btn-lg btn-outline-info btn-block" href="index.php?uc=authentification&action=backVilles" type="submit">Retour villes</a>
 
                         <ul class="nav nav-main">
                             <li>
@@ -69,11 +68,9 @@
                                             </div>
                                         </header>
                                         <div class="card-body text-center">
-                                            <h3 class="font-weight-semibold mt-3 text-center">Explorez le monde ! </h3>
-                                            <p class="text-center">A partir de l'aéroport d'Orly, trouvez votre
-                                                destination idéale
-                                                pour vos prochaines vacances et choisisez une activité parmi celles
-                                                disponibles ! </p>
+                                            <h3 class="font-weight-semibold mt-3 text-center">Administration du site </h3>
+                                            <p class="text-center">Sur cet interface, vous pouvez créer modifier des villes. Pour chacune de ces villes vous pouvez créer, modifier et supprimer des activités. </p>
+                                            Enfin, vous pouvez mettre à jour les températures de vos villes automatiquement.
                                         </div>
                                     </section>
                                 </div>
@@ -107,91 +104,63 @@
 
         <section role="main" class="content-body">
             <header class="page-header">
-                <h2>La ville de {{ ville.villeNom }} pour l'activité {{ ville.typeLibelle }}</h2>
+                <h2>Administration du site</h2>
 
                 <div class="right-wrapper text-right">
                     <ol class="breadcrumbs">
                         <li>
                             <a href="index.php?uc=authentification">
-                                <i class="fas fa-user-edit">Connexion administrateur</i>
+                                <i class="fas fa-user-edit">se déconnecter</i>
                             </a>
+
                         </li>
                     </ol>
 
                     <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
                 </div>
             </header>
-            <div class="col-md-12">
+            {% block content %}
+                {% if voyage is defined and voyage != null %}
+                    <h1>Modifier le voyage vers {{ voyage.nom }} pour l'activité {{ voyage.libelle }} </h1>
+                    {{ voyage.villeId }}
+                    <form id="contact-form" method="POST" action="index.php?uc=authentification&action=enregistrerVoyageUpdate">
 
-                <section class="card mb-4">
-                    <div class="card-body card-body-nopadding">
-                        <div class="owl-carousel owl-theme mb-0 owl-loaded owl-drag owl-carousel-init" data-plugin-carousel="" data-plugin-options="{ &quot;dots&quot;: true, &quot;items&quot;: 1 }" style="">
+                        <input type="text" name="budget" class="form-control" placeholder="budget"
+                               aria-label="Username" aria-describedby="basic-addon1" value="{{ voyage.budget }}">
+                        <input type="text" name="duree" class="form-control" placeholder="duree du voyage"
+                               aria-label="Username" aria-describedby="basic-addon1" value="{{ voyage.duree }}">
+                        <input type="hidden" name="numCity" class="form-control" placeholder="Image de la ville"
+                               aria-label="Username" aria-describedby="basic-addon1" value="{{ voyage.idVille }}">
+                        <input type="hidden" name="numType" class="form-control" placeholder="Image de la ville"
+                               aria-label="Username" aria-describedby="basic-addon1" value="{{ voyage.idType }}">
 
+                        <button class="btn btn-success" type="submit">Enregistrer</button>
+                    </form>
+                {% else %}
+                    <h1>Ajouter un voyage</h1>
+                    <form id="contact-form" method="POST" action="index.php?uc=authentification&action=enregistrerVoyageSinceCity   ">
+                        <input type="text" name="budget" class="form-control" placeholder="budget"
+                               aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" name="duree" class="form-control" placeholder="duree du voyage"
+                               aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="hidden" name="numCity" class="form-control" placeholder="Image de la ville"
+                               aria-label="Username" aria-describedby="basic-addon1" value="{{ numCity }}">
 
-                            <div class=""><div class="col-md-12">
-                                    <div class="col-md-11">
-                                        <div class="">
-                                            <img alt="" class="img-fluid rounded" src="{{ ville.villeImage }}">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="p-3">
-                            <h4 class="font-weight-semibold mt-0">{{ ville.villeNom }} - {{ ville.typeLibelle }}</h4>
-                            <p>Pour réserver ce voyage merci de vous rendre au guichet "Voyages Orly" au premier étage</p>
-                        </div>
-                    </div>
-                    <div class="card-footer card-footer-btn-group">
-                        <a href="index.php?uc=home&action=form"><i class="fas fa-user mr-1"></i> Retour à la recherche</a>
-                    </div>
-                </section>
-
-
-                <section class="card col-md-6 text-center">
-                    <header class="card-header">
-
-                        <h2 class="card-title">Températures à {{ ville.villeNom }}</h2>
-                    </header>
-                    <div class="card-body">
-                        <table class="table table-responsive-md table-striped mb-0">
-                            <thead>
-                            <tr>
-                                <th>Mois</th>
-                                <th>Température</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {% for periode in periodes %}
-                                <tr>
-                                    <td> {{ periode.libelle }} </td>
-                                    <td>{{ periode.temperature }} °</td>
-                                </tr>
+                        <select class="form-control" id="supervisor" name="type">
+                            {% for type in types %}
+                                <option value="{{ type.id }}">{{ type.libelle }}</option>
                             {% endfor %}
+                        </select>
 
+                        <button class="btn btn-success" type="submit">Enregistrer</button>
 
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            </div>            <br>
+                    </form>
+                {% endif %}
 
-            <script>
-                function showfilter(id) {
-                    element = document.getElementById(id);
-                    document.getElementById("liste1").style.display = "none";
-                    document.getElementById("liste2").style.display = "none";
-                    document.getElementById("liste3").style.display = "none";
-                    document.getElementById("liste4").style.display = "none";
-                    element.style.display = "block";
-                }
-
-                function hidefilter(id) {
-                    element = document.getElementById(id);
-                    element.style.display = "none";
-                }
-            </script>
-            <!-- end: page -->
-</section>
-</div>
+            {% endblock %}
+                <!-- end: page -->
+        </section>
+    </div>
 
 
 </section>

@@ -19,7 +19,7 @@ switch ($action) {
     //formulaire des villes
     case 'authentification':
         {
-            echo $twig->render('login.html.twig', [
+            echo $twig->render('template/login.html.twig', [
             ]);
             break;
         }
@@ -30,23 +30,29 @@ switch ($action) {
             $bool = $periode->getConnexion($login, $mdp);
             if ($bool) {
                 $villes = json_decode($ville->getAllVilles());
-                echo $twig->render('administrator.html.twig', [
+                echo $twig->render('template/villes.html.twig', [
                     "villes" => $villes
                 ]);
             } else {
-                echo $twig->render('login.html.twig', [
+                echo $twig->render('template/login.html.twig', [
                 ]);
 
             }
             break;
         }
+    case 'backVilles':{
+        $villes = json_decode($ville->getAllVilles());
+        echo $twig->render('template/villes.html.twig', [
+            "villes" => $villes
+        ]);
+
+    }
     case 'updateCity':
         {
             $numCity = $_GET["numCity"];
-            $city = $ville->getVilleById($numCity);
-
+            $city = $ville->getVilleWithoutDetailsById($numCity);
             $voyages = json_decode($type->getVoyageForCity($numCity));
-            echo $twig->render('update.html.twig', [
+            echo $twig->render('template/update.html.twig', [
                 'ville' => $city,
                 'continents' => $continents,
                 'voyages' => $voyages
@@ -63,14 +69,14 @@ switch ($action) {
             //supprimer ligne table ville
             $ville->deleteVille($numCity);
             $villes = json_decode($ville->getAllVilles());
-            echo $twig->render('administrator.html.twig', [
+            echo $twig->render('template/villes.html.twig', [
                 "villes" => $villes
             ]);
             break;
         }
     case 'createCity':
         {
-            echo $twig->render('update.html.twig', [
+            echo $twig->render('template/update.html.twig', [
                 'continents' => $continents
             ]);
             break;
@@ -82,7 +88,7 @@ switch ($action) {
             $continent = ($_POST['$continent'] !== "") ? $_POST['continent'] : null;
             $ville->createVille($nomVille, $imageVille, $continent);
             $villes = json_decode($ville->getAllVilles());
-            echo $twig->render('administrator.html.twig', [
+            echo $twig->render('template/villes.html.twig', [
                 "villes" => $villes
             ]);
             break;
@@ -96,7 +102,7 @@ switch ($action) {
 
             $ville->updateVille($nomVille, $imageVille, $continent, $idVille);
             $villes = json_decode($ville->getAllVilles());
-            echo $twig->render('administrator.html.twig', [
+            echo $twig->render('template/villes.html.twig', [
                 "villes" => $villes
             ]);
             break;
@@ -108,8 +114,7 @@ switch ($action) {
             $numType = ($_GET['typeId'] !== "") ? $_GET['typeId'] : null;
 
             $voyage = $type->getVoyageById($numCity, $numType);
-            var_dump($voyage);
-            echo $twig->render('voyage_form.html.twig', [
+            echo $twig->render('template/voyage_form.html.twig', [
                 'types' => $types,
                 'voyage' => $voyage
             ]);
@@ -125,7 +130,7 @@ switch ($action) {
             $type->deleteVoyage($numCity, $numType);
             $villes = json_decode($ville->getVilles());
             $voyages = json_decode($type->getVoyageForCity($numCity));
-            echo $twig->render('update.html.twig', [
+            echo $twig->render('template/update.html.twig', [
                 'ville' => $city,
                 'continents' => $continents,
                 'voyages' => $voyages
@@ -136,7 +141,7 @@ switch ($action) {
     case 'createVoyageSinceCity':
         {
             $numCity = ($_GET['villeId'] !== "") ? $_GET['villeId'] : null;
-            echo $twig->render('voyage_form.html.twig', [
+            echo $twig->render('template/voyage_form.html.twig', [
                 'types' => $types,
                 'numCity' => $numCity
             ]);
@@ -152,7 +157,7 @@ switch ($action) {
             $city = $ville->getVilleById($numCity);
 
             $voyages = json_decode($type->getVoyageForCity($numCity));
-            echo $twig->render('update.html.twig', [
+            echo $twig->render('template/update.html.twig', [
                 'ville' => $city,
                 'continents' => $continents,
                 'voyages' => $voyages
@@ -170,7 +175,7 @@ switch ($action) {
             $city = $ville->getVilleById($numCity);
 
             $voyages = json_decode($type->getVoyageForCity($numCity));
-            echo $twig->render('update.html.twig', [
+            echo $twig->render('template/update.html.twig', [
                 'ville' => $city,
                 'continents' => $continents,
                 'voyages' => $voyages

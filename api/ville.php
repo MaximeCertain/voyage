@@ -60,6 +60,24 @@ INNER JOIN periode on periode.idVille = ville.id");
 
         return ($resultat);
     }
+    //ville selon son Id
+    public function getVilleWithoutDetailsById($idVille)
+    {
+        $database = new database;
+        $connection = $database->getConnection();
+//base de requete
+        $sql = ("select ville.nom as villeNom,
+ ville.image as villeImage, ville.id as villeId from ville
+ WHERE ville.id = ".$idVille."");
+//condition
+
+        $request = $connection->prepare($sql);
+        $request->execute();
+        $resultat = $request->fetch();
+
+        return ($resultat);
+    }
+
 
 
     //fonction qui ajoute des conditions selon les données envoyés par l'utilisateur pour la fonction publique getVillesByOptions
@@ -121,7 +139,6 @@ VALUES('".$nomVille."','".$imageVille."', $idContinent)
         $database = new database;
         $connection = $database->getConnection();
         $sql = "DELETE FROM ville WHERE id =" .$idVille."";
-        echo $sql;
         $request = $connection->prepare($sql);
         $request->execute();
         return true ;
